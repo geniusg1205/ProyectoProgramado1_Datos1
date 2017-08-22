@@ -1,0 +1,4 @@
+---21/08/17 / 6:00pm a 10:00pm---
+.Se investiga como implementar la interfaz gráfica con la libreria JavaFx.
+.Se instala la Libreria JavaFx en eclipse.
+.Se crea el proyecto con el manejador de archivos GitHub con nombre "ProyectoProgramado1_Datos1", link "https://github.com/geniusg1205/ProyectoProgramado1_Datos1".
