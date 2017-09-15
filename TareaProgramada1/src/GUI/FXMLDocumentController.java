@@ -1,16 +1,19 @@
 package GUI;
 
-import java.awt.event.ActionEvent;
+import javafx.event.ActionEvent;
 import java.net.URL;
-import java.security.PrivateKey;
 import java.util.ResourceBundle;
+
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
+import javafx.scene.control.Menu;
+import javafx.scene.control.MenuBar;
 import javafx.scene.control.TextField;
 
 public class FXMLDocumentController  implements Initializable{
@@ -22,6 +25,16 @@ public class FXMLDocumentController  implements Initializable{
 	
 	@FXML
 	private TextField text;
+	
+	@FXML
+	private Button btn1;
+	
+	
+	@FXML
+	private MenuBar menu;
+	@FXML
+	private Menu menuExit;
+	
 	
 	ObservableList<String> listaCombo = FXCollections.observableArrayList();
 	
@@ -39,6 +52,11 @@ public class FXMLDocumentController  implements Initializable{
 		
 	}
 	
+	
+	@FXML
+	private void Exit(ActionEvent event) {
+		System.exit(0);		
+	}
 	
 	
 	

@@ -9,7 +9,7 @@
 .Se practica un pequeño tutorial de como manejar la libreria Gson
 	-Se crea un fomato normal de JAVA yu se convierte a JSON
 
----14/9/17 5:00pm a 
+---14/9/17 5:00pm a 12:43pm
 .Se configura el software Scene Builder
 .Se configura el GitHub en Eclipse
 .Se aprende sobre la creación de las carpetas.
