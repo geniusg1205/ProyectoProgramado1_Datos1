@@ -17,4 +17,6 @@
 	-Se crean las carpetas
 	-Se crean archivos
 	-Se escriben los archivos
+.Se crea la interfaz grafica con Scene Builder
+	-Se hacen pruebas de Interfaz Grafica
 
