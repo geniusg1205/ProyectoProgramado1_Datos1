@@ -8,3 +8,13 @@
 .Se instala la libreria GSON para manejar los archivos .json
 .Se practica un pequeño tutorial de como manejar la libreria Gson
 	-Se crea un fomato normal de JAVA yu se convierte a JSON
+
+---14/9/17 5:00pm a 
+.Se configura el software Scene Builder
+.Se configura el GitHub en Eclipse
+.Se aprende sobre la creación de las carpetas.
+.Manejar los archivos de texto
+	-Se crean las carpetas
+	-Se crean archivos
+	-Se escriben los archivos
+
