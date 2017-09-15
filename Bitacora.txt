@@ -20,3 +20,7 @@
 .Se crea la interfaz grafica con Scene Builder
 	-Se hacen pruebas de Interfaz Grafica
 
+---15/9/17 8:30am
+.Se hace la opcion de crear los JsonStore.
+.Se hace que los diferentes botones tengan los comandos correctos.
+

@@ -5,6 +5,7 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 
+import javafx.application.Platform;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
@@ -15,6 +16,8 @@ import javafx.scene.control.Label;
 import javafx.scene.control.Menu;
 import javafx.scene.control.MenuBar;
 import javafx.scene.control.TextField;
+import javafx.scene.control.TreeItem;
+import javafx.scene.control.TreeView;
 
 public class FXMLDocumentController  implements Initializable{
 	
@@ -29,21 +32,14 @@ public class FXMLDocumentController  implements Initializable{
 	@FXML
 	private Button btn1;
 	
+	@FXML
+	TreeView <String> treeview;
 	
-	@FXML
-	private MenuBar menu;
-	@FXML
-	private Menu menuExit;
+	TreeItem <String> root = new TreeItem<>("Json Store");
 	
 	
 	ObservableList<String> listaCombo = FXCollections.observableArrayList();
-	
-	@FXML
-	private void handleButtonAction(ActionEvent event) {
-		System.out.println("You click me!");
-		label.setText("Hola mundo!");
-		
-	}
+
 
 	@FXML
 	private void verItem(ActionEvent event) {
@@ -55,18 +51,29 @@ public class FXMLDocumentController  implements Initializable{
 	
 	@FXML
 	private void Exit(ActionEvent event) {
-		System.exit(0);		
+		Platform.exit();	
 	}
 	
 	
+	@FXML
+	private void creaStore(ActionEvent event) {
+		JsonStore a = new JsonStore();
+		a.CrearJson("Hola");
+		TreeItem <String> Hola = new TreeItem<>("Hola");
+		root.getChildren().add(Hola);
+		treeview.setRoot(root);
+		
+	}
 	
 	@Override
 	public void initialize(URL url, ResourceBundle rb) {
-		listaCombo.add("Item 1");
-		listaCombo.add("Item 2");
-		listaCombo.add("Item 3");
-		listaCombo.add("Item 4");
-		combo.setItems(listaCombo);
+		TreeItem <String>  prueba = new TreeItem<>("Prueba");
+		root.getChildren().add(prueba);
+		treeview.setRoot(root);
+		
+		
+		
+		
 		
 	}
 
